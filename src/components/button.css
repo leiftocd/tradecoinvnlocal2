@@ -1,0 +1,61 @@
+@import "tailwindcss";
+.bannerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 4.6rem;
+    background: var(--1, linear-gradient(90deg, #115DF2 -81.52%, #00E9EC 145.22%));
+    width: 100%;
+    padding: 1.1rem 2%;
+}
+.bannerBtn:hover{
+    border: 0.5px solid #FFF;
+    background:  #00E9EC;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.53);
+}
+.textBtn{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.textBtnLast{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.bannerBtnLast{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(90deg, rgba(17, 93, 242, 0.3) -22.61%, rgba(0, 233, 236, 0.3) 100%);
+    border-radius: 4.6rem;
+    z-index: 0;
+    position: relative;
+    padding: 1.1rem 1vw;
+
+}
+.bannerBtnLast::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 4.6rem;
+    background: linear-gradient(90deg, #115DF2 -81.52%, #00E9EC 145.22%);
+    mask:
+      linear-gradient(white 0 0) content-box, 
+      linear-gradient(white 0 0);
+    mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+.bannerBtnLast:hover{
+    background: linear-gradient(90deg, rgba(17, 93, 242, 0.7) -22.61%, rgba(0, 233, 236, 0.7) 100%);
+    
+}
+.text-shadow-glow {
+    text-shadow: 0 0 5px #03FBFE, 0 0 15px rgba(3, 251, 254, 0.8), 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+

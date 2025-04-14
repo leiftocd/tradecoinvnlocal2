@@ -1,0 +1,64 @@
+.col-left {
+        max-width: 66%;
+        flex-basis: 66%;
+        padding: 0 15px 30px;
+  }
+  .col-right {
+        max-width: 33%;
+        flex-basis: 33%;
+        padding: 0 15px 30px;
+  }
+  .col-left p,
+  .col-right p
+  {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.3em;
+  }
+  .market-slide {
+        display: none;
+  }
+  .mb-card{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  .card p{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+  .card{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+  .mb-card img{
+      max-width: 50%;
+      max-height: 6rem;
+  }
+  @media (max-width: 600px) {
+        .col-left,
+        .col-right {
+        display: none;
+    }
+    #market .swiper-slide > div{
+        padding: .8rem;
+    }
+    .market-slide {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #market .swiper-slide > div{
+        padding: 1rem .5rem;
+    }
+    .mket{
+        padding: 1rem .5rem ;
+    }
+}
+
+  

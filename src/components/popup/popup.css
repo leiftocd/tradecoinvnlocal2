@@ -1,0 +1,55 @@
+.popup ul li{
+    color: #ccc;
+    font-size: 2rem;
+    padding: .5rem 0;
+    list-style-type: disc;
+}
+
+.popup span{
+    color: #fff;
+    font-size: 2.8rem;
+}
+.popup.active {
+    opacity: 1;
+    z-index: 100;
+}
+@media (max-width: 990px) {
+    .popup ul li{
+        font-size: 1.8rem;
+    }
+    
+    .popup span{
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 768px) {
+    .popup ul li{
+        font-size: 1.6rem;
+    }
+    
+    .popup span{
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 600px) {
+    .popup ul li{
+        font-size: 1.4rem;
+    }
+    
+    .popup span{
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 480px) {
+    .popup ul li{
+        font-size: 1.2rem;
+    }
+    
+    .popup span{
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+    .popup{
+        max-width: 96%;
+    }
+}
