@@ -1,0 +1,137 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('/bg.jpg');
+    background-position-y: center;
+}
+
+.dotJump1,
+.dotJump2,
+.dotJump3{
+    position: relative;
+    animation: bonce 1s infinite linear;
+}
+.dotJump2{
+    animation-delay: .33s;
+}
+.dotJump3{
+    animation-delay: .66s;
+}
+.line-mid{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.load-title{
+    padding-right: 2.2rem;
+}
+.title-div{
+    border-left: 2px solid #ccc;
+    padding-left: 2rem;
+}
+section{
+    margin: 0 auto !important;
+}
+@media (max-width: 1200px){
+    .title-div,
+    .title-span{
+        font-size: 28px !important;
+    }
+    .h2-load{
+        font-size: 34px !important; 
+    }
+}
+@media (max-width: 990px){
+    .load-title{
+        height: 60px;
+    }
+    .load-title img{
+    }
+    .title-div,
+    .title-span{
+        font-size: 24px !important;
+    }
+    .h2-load{
+        font-size: 28px !important; 
+    }
+    .dotJump1,
+    .dotJump2,
+    .dotJump3{
+        font-size: 28px !important; 
+    }
+}
+@media (max-width: 600px){
+    .load-title{
+        height: 50px;
+        justify-content: end;
+    }
+    .title-div,
+    .title-span{
+        font-size: 20px !important;
+    }
+    .title-div{
+        padding-left: 1rem;
+
+    }
+    .load-title{
+        width: 40%;
+        padding-right: 1.2rem;
+    }
+    .load-title img{
+        justify-content: center !important;
+    }
+    .h2-load{
+        font-size: 24px !important; 
+    }
+    .dotJump1,
+    .dotJump2,
+    .dotJump3{
+        font-size: 24px !important; 
+    }
+}
+@media (max-width: 480px){
+    .load-title{
+        height: 45px;
+        justify-content: end;
+    }
+    .title-div,
+    .title-span{
+        font-size: 14px !important;
+    }
+    .h2-load{
+        font-size: 18px !important; 
+    }
+    .dotJump1,
+    .dotJump2,
+    .dotJump3{
+        font-size: 18px !important; 
+    }
+    .content{
+        gap: 2rem;
+    }
+    .aura{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@keyframes bonce {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-4px);
+    }
+    75%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
